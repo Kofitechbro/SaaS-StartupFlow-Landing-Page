@@ -31,6 +31,16 @@
   color: var(--on-primary-container);
 }
 
+.btn-secondary {
+  background-color: var(--surface-container-high);
+  color: var(--on-surface);
+  border: 1px solid var(--outline-variant);
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface-container-highest);
+}
+
 .btn-outline {
   background: transparent;
   color: var(--primary);

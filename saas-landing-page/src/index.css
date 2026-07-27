@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 :root {
   /* -- Background colors-- */
   --surface: #131315;
-  --surface-dim: #131315cc;
+  --surface-dim: rgba(19, 19, 21, 0.8);
   --surface-bright: #39393b;
-  --surface-variant: #35343780;
+  --surface-container-low: #1c1b1d;
+  --surface-variant: rgba(53, 52, 55, 0.5);
+  --surface-container-high: #2a2a2c;
+  --surface-container-highest: #353437;
 
   /* -- Primary colors -- */
   --primary: #c0c1ff;
@@ -12,11 +17,11 @@
   --on-primary-container: #0d0096;
 
   /* -- Surface colors -- */
-  --on-surface-variant: #c7c4d7;
   --on-surface: #e5e1e4;
+  --on-surface-variant: #c7c4d7;
 
   /* -- Outline colors -- */
-  --outline-variant: rgba(70, 69, 84, 0.2);
+  --outline-variant: rgba(70, 69, 84, 0.3);
 
   /* -- Typography -- */
 
@@ -24,13 +29,13 @@
   --font-family: 'Geist', sans-serif;
   --font-family-lab: jetbrains-mono, monospace;
   /* Font sizes */
-  --font-size-2xlg: 3rem;
-  --font-size-xlg: 2rem;
-  --font-size-lg: 1.5rem;
-  --font-size-md: 1rem;
-  --font-size-sm: 0.875rem;
-  --font-size-xsm: 0.813rem;
-  --font-size-2xsm: 0.75rem;
+  --font-size-2xlg: 3rem; /*48*/
+  --font-size-xlg: 2rem; /*32*/
+  --font-size-lg: 1.5rem; /*24*/
+  --font-size-md: 1rem; /*16*/
+  --font-size-sm: 0.875rem; /*14*/
+  --font-size-xsm: 0.813rem; /*13*/
+  --font-size-2xsm: 0.75rem; /*12*/
   /* Font weights */
   --font-weight-bold: 600;
   --font-weight-medium: 500;
@@ -46,7 +51,8 @@
   --font-letter-spacing-xlg: -0.02em;
   --font-letter-spacing-lg: -0.01em;
   --font-letter-spacing-md: 0em;
-  --font-letter-spacing-sm: 0.02em;
+  --font-letter-spacing-sm: 0.01em;
+  --font-letter-spacing-xsm: 0.02em;
 
   /* -- Border Radius -- */
   --border-radius-sm: 0.25rem;
@@ -106,6 +112,15 @@ body {
   min-height: 100svh;
 }
 
+h1 {
+  font-size: 3.5rem;
+  line-height: var(--font-line-height-lg);
+}
+
+p {
+  line-height: var(--font-line-height-sm);
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -113,4 +128,24 @@ a {
 
 a:hover {
   color: var(--primary);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.js-center {
+  justify-content: center;
+}
+
+.js-space-btw {
+  justify-content: space-between;
 }

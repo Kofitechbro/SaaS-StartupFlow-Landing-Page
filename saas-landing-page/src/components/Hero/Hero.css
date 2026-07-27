@@ -1,0 +1,73 @@
+.hero {
+  position: relative;
+  background-image: url('../../assets/bg-img.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 0 var(--spacing-lg);
+}
+
+.hero-content {
+  gap: var(--spacing-xlg);
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+  z-index: 2;
+}
+
+.version {
+  gap: var(--spacing-sm);
+  background-color: var(--surface-container-low);
+  padding: var(--spacing-2xsm) var(--spacing-md);
+  border-radius: var(--border-radius-full);
+  border: 1px solid var(--outline-variant);
+}
+
+.version .online {
+  border-radius: var(--border-radius-full);
+  background-color: green;
+  width: 8px;
+  height: 8px;
+}
+
+.version-text {
+  text-transform: uppercase;
+  font-size: var(--font-size-md);
+  letter-spacing: var(--font-letter-spacing-xsm);
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.bg-gradient {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(19, 19, 21),
+    rgba(19, 19, 21, 0.717)
+  );
+  z-index: 1;
+}
+
+.hero-button {
+  margin-top: var(--spacing-xlg);
+  gap: var(--spacing-md);
+}
+
+.hero-btn {
+  gap: var(--spacing-sm);
+}
+
+.hero-btn i {
+  font-size: var(--font-size-lg);
+}
+
+.hero button {
+  width: auto;
+}

@@ -20,7 +20,7 @@ export function NavBar() {
       </nav>
 
       <div className="desktop-btn">
-        <Buttons type="submit" variant="primary" size="medium">
+        <Buttons type="submit" variant="primary" size="small">
           Get Started
         </Buttons>
       </div>
