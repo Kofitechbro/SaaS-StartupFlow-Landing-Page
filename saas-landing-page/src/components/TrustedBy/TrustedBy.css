@@ -1,0 +1,17 @@
+.trusted-by {
+  padding: var(--spacing-lg);
+  background-color: var(--surface-container-lowest);
+}
+
+p.trustedBy-text {
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-lg);
+}
+
+.brands {
+  gap: var(--spacing-2xlg);
+}
+
+.trusted-by i {
+  color: var(--inverse-surface);
+}

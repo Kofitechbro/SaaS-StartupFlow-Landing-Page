@@ -6,21 +6,37 @@
   --surface-dim: rgba(19, 19, 21, 0.8);
   --surface-bright: #39393b;
   --surface-container-low: #1c1b1d;
-  --surface-variant: rgba(53, 52, 55, 0.5);
+  --surface-container-lowest: rgba(14, 14, 16, 0.5);
+  --surface-variant: #353437;
   --surface-container-high: #2a2a2c;
   --surface-container-highest: #353437;
+  --surface-tint: rgba(192, 193, 255, 0.1);
 
   /* -- Primary colors -- */
   --primary: #c0c1ff;
   --on-primary: #1000a9;
   --primary-container: #8083ff;
   --on-primary-container: #0d0096;
+  --primary-fixed-dim: rgba(192, 193, 255, 0.50);
+
+  /* -- Secondary -- */
+  --secondary: #4edea3;
+  --secondary-fixed-tin: rgba(78, 222, 162, 0.1);
+  --secondary-fixed-dim: rgba(78, 222, 163, 0.50);
+
+  /* -- tertiary -- */
+  --tertiary: #ffb783;
+  --tertiary-fixed-tin: rgba(255, 183, 131, 0.1);
+  --tertiary-fixed-dim: rgba(255, 183, 131, 0.50);
 
   /* -- Surface colors -- */
   --on-surface: #e5e1e4;
   --on-surface-variant: #c7c4d7;
+  --inverse-surface: rgba(229, 225, 228, 0.4);
 
   /* -- Outline colors -- */
+  --outline: #908fa0;
+  --outline-container-high: rgba(63, 63, 70, 0.3);
   --outline-variant: rgba(70, 69, 84, 0.3);
 
   /* -- Typography -- */
@@ -63,7 +79,8 @@
   --border-radius-full: 9999px;
 
   /* -- Spacing -- */
-  --spacing-2xlg: 3rem;
+  --spacing-3xlg: 3rem;
+  --spacing-2xlg: 2.5rem;
   --spacing-xlg: 2rem;
   --spacing-lg: 1.5rem;
   --spacing-md: 1rem;
@@ -75,14 +92,14 @@
   --shadow-sm: 0 1px 2px rgb(70, 69, 84, 0.05);
   --shadow-md: 0 4px 6px rgba(70, 69, 84, 0.1);
   --shadow-lg: 0 10px 15px rgba(70, 69, 84, 0.15);
-  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.2);
+  --shadow-xlg: 0 20px 25px rgba(0, 0, 0, 0.2);
 
   /* -- Transitions -- */
-  --transition-fast: 0.2s ease-in-out;
-  --transition-normal: 0.3s ease-in-out;
-  --transition-slow: 0.5s ease-in-out;
-  --transition-very-slow: 1s ease-in-out;
-  --transition-very-fast: 0.1s ease-in-out;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-very-slow: 1s ease;
+  --transition-very-fast: 0.1s ease;
   /* -- Z-Index -- */
   --z-index-dropdown: 1000;
 }
@@ -112,9 +129,19 @@ body {
   min-height: 100svh;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--on-surface);
+}
+
 h1 {
   font-size: 3.5rem;
   line-height: var(--font-line-height-lg);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
 }
 
 p {
@@ -128,6 +155,14 @@ a {
 
 a:hover {
   color: var(--primary);
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-size: var(--font-size-lg);
 }
 
 .flex {

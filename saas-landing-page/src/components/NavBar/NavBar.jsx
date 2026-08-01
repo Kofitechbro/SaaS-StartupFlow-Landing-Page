@@ -3,7 +3,7 @@ import Logo from '../../assets/Logo.png';
 import { Buttons } from '../Buttons/Buttons';
 import './NavBar.css';
 
-export function NavBar() {
+export function NavBar({isFormOpen}) {
   const [isOpen, setIsOpen] = useState(false);
 
   function handleToggled() {
@@ -20,7 +20,7 @@ export function NavBar() {
       </nav>
 
       <div className="desktop-btn">
-        <Buttons type="submit" variant="primary" size="small">
+        <Buttons type="submit" variant="primary" size="small" onClick={isFormOpen}>
           Get Started
         </Buttons>
       </div>
@@ -41,7 +41,7 @@ function MobileNav({ isOpen }) {
   return (
     <nav className={`mobile-nav ${isOpen ? 'active' : ''}`}>
       <NavLinks />
-      <Buttons type="submit" variant="primary" size="medium">
+      <Buttons type="submit" variant="primary" size="small">
         Get Started
       </Buttons>
     </nav>

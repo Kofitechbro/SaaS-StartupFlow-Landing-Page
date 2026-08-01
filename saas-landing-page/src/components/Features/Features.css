@@ -1,0 +1,73 @@
+.features {
+  padding: var(--spacing-3xlg) var(--spacing-lg);
+}
+
+.features .text {
+  text-align: center;
+  margin-bottom: var(--spacing-3xlg);
+}
+
+.features .text p {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.features h2 {
+  margin-bottom: var(--spacing-xsm);
+}
+
+.feature-group {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.feature-item {
+  background-image: linear-gradient(
+    to top,
+    rgba(31, 31, 35, 0.8),
+    rgb(24, 24, 27, 0.8)
+  );
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius-lg);
+  border: 1px solid var(--outline-container-high);
+  transition: 2s ease;
+}
+
+.feature-item span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: aliceblue;
+  border-radius: var(--border-radius-DEFAULT);
+  margin-bottom: var(--spacing-md);
+}
+
+.primary span {
+  background-color: var(--surface-tint);
+  color: var(--primary);
+}
+
+.primary:hover {
+  border-color: var(--primary-fixed-dim);
+}
+
+.secondary span {
+  background-color: var(--secondary-fixed-tin);
+  color: var(--secondary);
+}
+
+.secondary:hover {
+  border-color: var(--secondary-fixed-dim);
+}
+
+.tertiary span {
+  background-color: var(--tertiary-fixed-tin);
+  color: var(--tertiary);
+}
+
+.tertiary:hover {
+  border-color: var(--tertiary-fixed-dim);
+}
