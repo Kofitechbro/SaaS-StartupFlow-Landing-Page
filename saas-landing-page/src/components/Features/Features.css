@@ -23,14 +23,11 @@
 }
 
 .feature-item {
-  background-image: linear-gradient(
-    to top,
-    rgba(31, 31, 35, 0.8),
-    rgb(24, 24, 27, 0.8)
-  );
+  background-image: var(--surface-linear-gradient);
   padding: var(--spacing-lg);
   border-radius: var(--border-radius-lg);
   border: 1px solid var(--outline-container-high);
+  cursor: pointer;
   transition: 2s ease;
 }
 

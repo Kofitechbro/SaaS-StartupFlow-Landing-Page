@@ -1,0 +1,95 @@
+.price {
+  background-color: var(--surface-container-lowest);
+  padding: var(--spacing-3xlg) var(--spacing-lg);
+}
+
+.price-header {
+  text-align: center;
+  margin-bottom: var(--spacing-3xlg);
+}
+
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+  gap: var(--spacing-md);
+}
+
+.price-card {
+  background-image: var(--surface-linear-gradient);
+  padding: var(--spacing-2xlg);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-md);
+
+  justify-content: space-between;
+}
+
+.price-card-pro {
+  position: relative;
+  background-image: var(--surface-tint-linear-gradient);
+  border: 1px solid var(--primary);
+  overflow: hidden;
+}
+
+.price-status {
+  display: inline-block;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-light);
+  color: var(--on-surface-variant-dim);
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-xsm);
+}
+
+.price-status-pro {
+  position: relative;
+  background-color: transparent;
+  color: var(--primary);
+}
+
+.price-price {
+  font-size: var(--font-size-xlg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-md);
+}
+
+.price-duration {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-regular);
+  color: var(--on-surface-variant);
+  margin-bottom: var(--spacing-md);
+}
+
+.price-description {
+  margin-bottom: var(--spacing-2xlg);
+  color: var(--on-surface);
+}
+
+.price-features {
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-3xlg);
+}
+
+.price-feature {
+  gap: var(--spacing-xsm);
+}
+
+.price-feature i {
+  font-size: var(--font-size-2xsm);
+  color: var(--secondary);
+}
+
+.price-popular {
+  background-color: var(--primary);
+  color: var(--on-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  padding: var(--spacing-xsm) var(--spacing-md);
+  border-radius: var(--border-radius-DEFAULT);
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.price-button button {
+  width: 100%;
+}

@@ -1,4 +1,4 @@
-import './Features.css'
+import './Features.css';
 
 const features = [
   {
@@ -68,7 +68,7 @@ function FeatureItems() {
   return (
     <div className="feature-group">
       {features.map((feature) => (
-        <div className={`feature-item ${feature.color}`}>
+        <div className={`feature-item ${feature.color}`} key={feature.title}>
           <span>
             <i className={feature.icon}></i>
           </span>
