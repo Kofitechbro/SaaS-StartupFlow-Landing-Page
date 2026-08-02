@@ -37,55 +37,108 @@ const prices = [
 export function Price() {
   return (
     <section className="price">
-      <div className="price-header">
-        <h2 className="price-title">Transparent Pricing</h2>
-        <p className="price-subtitle">
-          Scalable plans for every stage of your growth.
-        </p>
-      </div>
+      <PriceHeader />
 
-      <div className="price-cards">
-        {prices.map((price) => (
-          <div
-            key={price.status}
-            className={`price-card flex flex-col ${price.status === 'pro' && 'price-card-pro'}`}
-          >
-            <span
-              className={`price-status ${price.status === 'pro' && 'price-status-pro'}`}
-            >
-              {price.status}
-            </span>
-            <h3 className="price-price">
-              {price.price}{' '}
-              {price.duration && (
-                <span className="price-duration">{price.duration}</span>
-              )}
-            </h3>
-            <p className="price-description">{price.description}</p>
-            <ul className="price-features flex flex-col js-center">
-              {price.features.map((feature, index) => (
-                <li key={index} className="price-feature flex align-center">
-                  <i className="fa-solid fa-check"></i> {feature}
-                </li>
-              ))}
-            </ul>
-            {price.popularCap && (
-              <span className="price-popular">{price.popularCap}</span>
-            )}
-            <div className="price-button">
-              {price.status === 'pro' ? (
-                <Buttons variant="primary" size="medium">
-                  Get Started
-                </Buttons>
-              ) : (
-                <Buttons variant="outline" size="small">
-                  Get Started
-                </Buttons>
-              )}
-            </div>
-          </div>
-        ))}
-      </div>
+      <PriceCards />
     </section>
+  );
+}
+
+function PriceHeader() {
+  return (
+    <div className="price-header">
+      <h2 className="price-title">Transparent Pricing</h2>
+      <p className="price-subtitle">
+        Scalable plans for every stage of your growth.
+      </p>
+    </div>
+  );
+}
+
+function PriceCards() {
+  return (
+    <div className="price-cards">
+      {prices.map((price) => (
+        <PriceCard key={price.status} price={price} />
+      ))}
+    </div>
+  );
+}
+
+function PriceCard({ price }) {
+  return (
+    <div
+      className={`price-card flex flex-col ${price.status === 'pro' && 'price-card-pro'}`}
+    >
+      <PriceStatus price={price} />
+      <PriceTitle price={price} />
+      <PriceDescription price={price} />
+      <PriceFeatures price={price} />
+      <PopularCap price={price} />
+      <PriceButton price={price} />
+    </div>
+  );
+}
+
+function PriceStatus({ price }) {
+  return (
+    <span
+      className={`price-status ${price.status === 'pro' && 'price-status-pro'}`}
+    >
+      {price.status}
+    </span>
+  );
+}
+
+function PriceTitle({ price }) {
+  return (
+    <h3 className="price-price">
+      {price.price}{' '}
+      {price.duration && (
+        <span className="price-duration">{price.duration}</span>
+      )}
+    </h3>
+  );
+}
+
+function PriceDescription({ price }) {
+  return <p className="price-description">{price.description}</p>;
+}
+
+function PriceFeatures({ price }) {
+  return (
+    <ul className="price-features flex flex-col js-center">
+      {price.features.map((feature, index) => (
+        <li key={index} className="price-feature flex align-center">
+          <i className="fa-solid fa-check"></i> {feature}
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function PopularCap({ price }) {
+  return (
+    <>
+      {price.popularCap && (
+        <span className="price-popular">{price.popularCap}</span>
+      )}
+    </>
+  );
+}
+
+function PriceButton({ price }) {
+  return (
+    <div className="price-button">
+      {price.status === 'pro' ? (
+        <Buttons variant="primary" size="medium">
+          Start Free trail
+        </Buttons>
+      ) : (
+        <Buttons variant="outline" size="small">
+          {price.status === 'starter' ? 'Select Starter' : 'Contact Sales'}
+        </Buttons>
+      )}
+    </div>
   );
 }

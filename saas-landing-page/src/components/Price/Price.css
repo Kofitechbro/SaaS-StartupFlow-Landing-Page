@@ -78,6 +78,7 @@
 }
 
 .price-popular {
+  text-transform: uppercase;
   background-color: var(--primary);
   color: var(--on-primary);
   font-size: var(--font-size-sm);
