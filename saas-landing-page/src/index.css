@@ -45,7 +45,7 @@
   /* -- Outline colors -- */
   --outline: #908fa0;
   --outline-container-high: rgba(63, 63, 70, 0.3);
-  --outline-variant: rgba(70, 69, 84, 0.3);
+  --outline-variant: rgba(70, 69, 84, 0.302); 
 
   /* -- Typography -- */
 

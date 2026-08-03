@@ -1,0 +1,29 @@
+.faq {
+    padding: var(--spacing-3xlg) var(--spacing-lg);
+}
+
+.faq h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.faq-card {
+    width: 600px;
+    padding: var(--spacing-md) 0;
+    border-bottom: 1px solid var(--outline-variant);
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    color: var(--on-surface-variant-dim);
+    margin-top: var(--spacing-md);
+}
+
+.faq-question i {
+    font-size: var(--font-size-md);
+}

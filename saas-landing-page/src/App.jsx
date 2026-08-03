@@ -4,6 +4,7 @@ import { TrustedBy } from './components/TrustedBy/TrustedBy';
 import { Features } from './components/Features/Features';
 import { Price } from './components/Price/Price';
 import { Testimony } from './components/Testimony/Testimony';
+import { FAQ } from './components/FAQ/FAQ';
 // import { Form } from './components/Form/Form';
 // import { useState } from 'react';
 
@@ -22,6 +23,7 @@ function App() {
       <Features />
       <Price />
       <Testimony />
+      <FAQ />
       {/* {isFormOpen && <Form />} */}
     </>
   );
