@@ -1,0 +1,26 @@
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--spacing-3xlg) var(--spacing-lg);
+}
+
+.cta-container {
+  text-align: center;
+  background-image: var(--surface-linear-gradient-tin);
+  padding: var(--spacing-3xlg);
+  border-radius: var(--border-radius-xlg);
+}
+
+.cta-container h2 {
+  font-size: var(--font-size-2xlg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.cta-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-3xlg);
+}

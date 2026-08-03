@@ -5,6 +5,7 @@ import { Features } from './components/Features/Features';
 import { Price } from './components/Price/Price';
 import { Testimony } from './components/Testimony/Testimony';
 import { FAQ } from './components/FAQ/FAQ';
+import { CTA } from './components/CTA/CTA';
 // import { Form } from './components/Form/Form';
 // import { useState } from 'react';
 
@@ -24,6 +25,7 @@ function App() {
       <Price />
       <Testimony />
       <FAQ />
+      <CTA />
       {/* {isFormOpen && <Form />} */}
     </>
   );
