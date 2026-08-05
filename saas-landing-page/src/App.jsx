@@ -6,6 +6,8 @@ import { Price } from './components/Price/Price';
 import { Testimony } from './components/Testimony/Testimony';
 import { FAQ } from './components/FAQ/FAQ';
 import { CTA } from './components/CTA/CTA';
+import { Newsletter } from './components/Newsletters/Newsletters';
+import { Footer } from './components/Footer/Footer';
 // import { Form } from './components/Form/Form';
 // import { useState } from 'react';
 
@@ -26,6 +28,8 @@ function App() {
       <Testimony />
       <FAQ />
       <CTA />
+      <Newsletter />
+      <Footer />
       {/* {isFormOpen && <Form />} */}
     </>
   );

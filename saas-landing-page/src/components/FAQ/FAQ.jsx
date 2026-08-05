@@ -61,7 +61,7 @@ export function FAQ() {
 
 function FAQData({ question, answer, curOpen, index, toggleFAQ }) {
   const isOpen = curOpen === index;
-  console.log(isOpen);
+
   return (
     <article className="faq-card">
       <h4 className="faq-question" onClick={() => toggleFAQ(index)}>

@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-:root {
+:root { 
   /* -- Background colors-- */
   --surface: #131315;
   --surface-dim: rgba(19, 19, 21, 0.8);
   --surface-bright: #39393b;
-  --surface-container-lowest: rgba(14, 14, 16, 0.3);
+  --surface-container: #201f22;
+  --surface-container-low-variant: #0e0e10;
   --surface-container-low: #1c1b1d;
   --surface-container-lowest: rgba(14, 14, 16, 0.5);
-  --surface-container: #201f22;
-  --surface-variant: #353437;
   --surface-container-high: #2a2a2c;
   --surface-container-highest: #353437;
+  --surface-variant: #353437;
   --surface-tint: rgba(192, 193, 255, 0.1);
   --surface-linear-gradient: linear-gradient(
     to top,
