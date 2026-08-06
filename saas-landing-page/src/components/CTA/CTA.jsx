@@ -28,10 +28,10 @@ function CTAText() {
 function CTAButtons() {
   return (
     <div className="cta-buttons">
-      <Buttons variant="primary" size="large">
+      <Buttons variant="primary" size="large" onClick={()=> alert('Free Trails will be available in the next update')}>
         Start Free Trail
       </Buttons>
-      <Buttons variant="outline" size="large">
+      <Buttons variant="outline" size="large" onClick={()=>alert('')}>
         Contact Sales
       </Buttons>
     </div>

@@ -131,11 +131,25 @@ function PriceButton({ price }) {
   return (
     <div className="price-button">
       {price.status === 'pro' ? (
-        <Buttons variant="primary" size="medium">
-          Start Free trail
+        <Buttons
+          variant="primary"
+          size="medium"
+          onClick={() =>
+            alert('Free Trails will be available in the next update')
+          }
+        >
+          Start Free Trail
         </Buttons>
       ) : (
-        <Buttons variant="outline" size="small">
+        <Buttons
+          variant="outline"
+          size="small"
+          onClick={() =>
+            alert(
+              `${price.status === 'starter' ? "You've selected the starter package" : 'Customer Service \nTell: +xxx xx xxxx xxx\nEmail: customerservice@example.com'}`,
+            )
+          }
+        >
           {price.status === 'starter' ? 'Select Starter' : 'Contact Sales'}
         </Buttons>
       )}

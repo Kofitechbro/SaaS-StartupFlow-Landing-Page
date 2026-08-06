@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Buttons } from '../Buttons/Buttons';
 import './Hero.css';
 
@@ -10,8 +11,7 @@ export function Hero() {
           <span className="version-text">New: Workflow v3.0 Released</span>
         </div>
         <h1>
-          Automate Work.{' '}
-          <span className="text-primary">Deliver Faster.</span>
+          Automate Work. <span className="text-primary">Deliver Faster.</span>
         </h1>
         <p>
           StartupFlow streamlines your engineering and design processes with
@@ -20,8 +20,13 @@ export function Hero() {
         </p>
 
         <div className="hero-button flex">
-          <Buttons size="large">Start Free Trial</Buttons>
-          <button className="btn btn-large btn-secondary hero-btn flex align-center js-center">
+          <Buttons size="large" onClick={() => alert('Coming Soon...')}>
+            Start Free Trial
+          </Buttons>
+          <button
+            className="btn btn-large btn-secondary hero-btn flex align-center js-center"
+            onClick={() => alert('Demo is not available...')}
+          >
             <i className="fa-regular fa-circle-play"></i>Watch Demo
           </button>
         </div>

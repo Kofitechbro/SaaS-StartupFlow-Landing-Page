@@ -61,7 +61,7 @@
 }
 
 .hero-btn {
-  gap: var(--spacing-sm);
+  gap: var(--spacing-2xsm);
 }
 
 .hero-btn i {

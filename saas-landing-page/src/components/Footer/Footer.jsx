@@ -57,7 +57,7 @@ function FooterLinksList() {
           <p className="link-title">{footerLink.navTitle}</p>
           <ul className="linList flex flex-col">
             {footerLink.navLinks.map((linkList, index) => (
-              <li key={linkList.index}>
+              <li key={index}>
                 <a href="#">{linkList}</a>
               </li>
             ))}

@@ -42,7 +42,7 @@ export function FAQ() {
 
   return (
     <section className="faq flex flex-col js-center align-center">
-      <h2 className="faq-title">What Our customers Says</h2>
+      <h2 className="faq-title">Frequently Asked Questions</h2>
       <div className="faq-cards">
         {faqData.map((faq, index) => (
           <FAQData
